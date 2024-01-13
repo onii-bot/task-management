@@ -33,14 +33,16 @@ if (isset($_COOKIE['username'])) {
 
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr data-task='{$row['task']}' data-datetime='{$row['datetime']}'>
-                        <td>{$row['task']}</td>
-                        <td>{$row['datetime']}</td>
-                        <td>
-                            <a href='../php/edit.php?id={$row['id']}' class='edit-btn'>Edit</a>
-                            <form action='../php/delete.php?id={$row['id']}' method='POST'>
-                            <button class='delete-btn'>Delete</button>
-                            </form>
-                        </td>
+                            <td>{$row['task']}</td>
+                            <td>{$row['datetime']}</td>
+                            <td>
+                                <div style='display: inline-block; margin-right: 10px;'>
+                                    <a href='../php/edit.php?id={$row['id']}' class='edit-btn' style='text-decoration: none; padding: 5px 10px; background-color: #3498db; color: #fff; border-radius: 5px;'>Edit</a>
+                                </div>
+                                <form action='../php/delete.php?id={$row['id']}' method='POST' style='display: inline-block;'>
+                                    <button class='delete-btn' style='padding: 5px 10px; background-color: #e74c3c; color: #fff; border-radius: 5px;'>Delete</button>
+                                </form>
+                            </td>
                     </tr>";
             }            
 

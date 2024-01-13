@@ -1,123 +1,122 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #7723ca, #a712bf);
-    color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #7723ca, #a712bf);
+  color: #fff;
 }
 
 .header {
-    background-color: transparent; /* Transparent header */
-    color: #fff;
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 20px; /* Increased right margin for the logo */
-}
-
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.auth-button {
-    background-color: #9b59b6; /* Dark purple button */
-    color: #fff;
-    padding: 12px 20px; /* Increased padding for a bigger button */
-    border: none;
-    border-radius: 10px; /* Added border-radius for a rounder button */
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
-}
-
-.auth-button:link,
-.auth-button:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-}
-
-
-.auth-button:hover {
-  background-color: #fff; /* Dark purple button */
-  color: #000;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.auth-button:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.auth-button-text:link,
-.auth-button-text:visited {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #f2cd5c;
-  display: inline-block;
-  border-bottom: 1px solid #f2cd5c;
-  padding: 3px;
-  transition: all 0.2s;
-}
-
-.auth-button-text:hover {
-  background-color: #f2cd5c;
+  background-color: transparent; /* Transparent header */
   color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-
-.auth-button-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0px);
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.organization-text {
-    font-size: 1.2rem; /* Bigger font size for organization text */
-}
-
-.navbtns {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Add margin to separate from the organization text */
-}
-
-.focus-heading {
-    font-size: 5rem; /* Set font size to 5 rem */
-    color: #fff; /* White color */
-    text-align: center;
-    margin-top: 40px; /* Add space above the heading */
-}
-
-.focus-heading span {
-    display: block; /* Each part of the heading on a new line */
-    margin-bottom: 10px; /* Reduced space between spans */
-}
-
-.flex-form{
+  padding: 3rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-.flex-form-row{
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px; /* Increased right margin for the logo */
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-item {
+  background-color: #9b59b6; /* Dark purple button */
+  color: #fff;
+  padding: 12px 20px; /* Increased padding for a bigger button */
+  border: none;
+  border-radius: 10px; /* Added border-radius for a rounder button */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-item:link,
+.btn-item:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 40px;
+display: inline-block;
+border-radius: 100px;
+transition: all 0.2s;
+}
+
+.btn-item:hover {
+background-color: #fff; /* Dark purple button */
+color: #000;
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-item:active {
+transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-text:link,
+.btn-text:visited {
+font-size: 1.6rem;
+text-decoration: none;
+color: #f2cd5c;
+display: inline-block;
+border-bottom: 1px solid #f2cd5c;
+padding: 3px;
+transition: all 0.2s;
+}
+
+.btn-text:hover {
+background-color: #f2cd5c;
+color: #fff;
+transform: translateY(-2px);
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-text:active {
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+transform: translateY(0px);
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.organization-text {
+  font-size: 1.2rem; /* Bigger font size for organization text */
+}
+
+.navbtns {
   display: flex;
   justify-content: center;
+  margin-top: 20px; /* Add margin to separate from the organization text */
+}
+
+.focus-heading {
+  font-size: 5rem; /* Set font size to 5 rem */
+  color: #fff; /* White color */
+  text-align: center;
+  margin-top: 40px; /* Add space above the heading */
+}
+
+.focus-heading span {
+  display: block; /* Each part of the heading on a new line */
+  margin-bottom: 10px; /* Reduced space between spans */
+}
+
+.flex-form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex-form-row{
+display: flex;
+justify-content: center;
 }

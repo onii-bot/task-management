@@ -10,9 +10,9 @@
 
 <div class="header">
     <div class="logo">MTasks</div>
-    <div class="auth-buttons">
-        <button class="auth-button" onclick="location.href='./components/login.html'">Login</button>
-        <button class="auth-button" onclick="location.href='./components/signup.html'">Sign Up</button>
+    <div class="btn">
+        <button class="btn" onclick="location.href='./components/login.html'">Login</button>
+        <button class="btn" onclick="location.href='./components/signup.html'">Sign Up</button>
     </div>
 </div>
 
@@ -27,9 +27,9 @@
         Keep track of your to-do list, set due dates, and achieve your goals.
     </p>
     <div class="navbtns">
-        <div class="auth-buttons">
-            <button class="auth-button">Learn More</button>
-            <button class="auth-button">Get Started</button>
+        <div class="btn">
+            <button class="btn">Learn More</button>
+            <button class="btn">Get Started</button>
         </div>
     </div>
 </div>
@@ -37,12 +37,12 @@
 <script src="script.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-    // Checking for cookiee
-    var username = getCookie('username');
+        // Checking for cookie
+        var username = getCookie('username');
 
-    if (username) {
-        window.location.href = './components/home.php';
-    }
+        if (username) {
+            window.location.href = './components/home.php';
+        }
     });
 
     function getCookie(name) {

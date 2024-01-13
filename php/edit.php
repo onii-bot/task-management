@@ -29,5 +29,5 @@ $row = mysqli_fetch_assoc($result);
 <label for="datetime">Date and Time:</label>
 <input type="datetime-local" value="<?php echo $row['datetime']; ?>" id="datetime" name="datetime" required>
 
-<button type="submit" class="auth-button">Edit Task</button>
+<button type="submit" class="btn">Edit Task</button>
 </form>

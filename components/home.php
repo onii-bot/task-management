@@ -11,7 +11,7 @@
 <div class="header">
     <div class="logo" onclick="location.href='../index.html'">MTasks</div>
     <div class="logout-button">
-        <button class="auth-button" onclick="location.href='../php/logout.php'">Logout</button>
+        <button class="btn" onclick="location.href='../php/logout.php'">Logout</button>
     </div>
 </div>
 
@@ -31,7 +31,7 @@
         <label for="datetime">Date and Time:</label>
         <input type="datetime-local" id="datetime" name="datetime" required>
         
-        <button type="submit" class="auth-button">Add Task</button>
+        <button type="submit" class="btn">Add Task</button>
     </form>
 
     <?php include '../php/get_tasks.php'; ?>

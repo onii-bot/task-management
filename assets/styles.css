@@ -7,7 +7,6 @@ body {
 }
 
 .header {
-  background-color: transparent; /* Transparent header */
   color: #fff;
   padding: 3rem;
   display: flex;
@@ -18,26 +17,26 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  margin-right: 20px; /* Increased right margin for the logo */
+  margin-right: 20px; 
 }
 
-.btn {
+.btns {
   display: flex;
   gap: 10px;
 }
 
-.btn-item {
-  background-color: #9b59b6; /* Dark purple button */
+.btn {
+  background-color: #9b59b6;
   color: #fff;
-  padding: 12px 20px; /* Increased padding for a bigger button */
+  padding: 12px 20px;
   border: none;
-  border-radius: 10px; /* Added border-radius for a rounder button */
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-item:link,
-.btn-item:visited {
+.btn:link,
+.btn:visited {
 text-transform: uppercase;
 text-decoration: none;
 padding: 15px 40px;
@@ -46,14 +45,14 @@ border-radius: 100px;
 transition: all 0.2s;
 }
 
-.btn-item:hover {
-background-color: #fff; /* Dark purple button */
+.btn:hover {
+background-color: #fff;
 color: #000;
 transform: translateY(-3px);
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn-item:active {
+.btn:active {
 transform: translateY(-1px);
 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -89,25 +88,25 @@ transform: translateY(0px);
 }
 
 .organization-text {
-  font-size: 1.2rem; /* Bigger font size for organization text */
+  font-size: 1.2rem;
 }
 
 .navbtns {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Add margin to separate from the organization text */
+  margin-top: 20px; 
 }
 
 .focus-heading {
-  font-size: 5rem; /* Set font size to 5 rem */
-  color: #fff; /* White color */
+  font-size: 5rem;
+  color: #fff; 
   text-align: center;
-  margin-top: 40px; /* Add space above the heading */
+  margin-top: 40px; 
 }
 
 .focus-heading span {
-  display: block; /* Each part of the heading on a new line */
-  margin-bottom: 10px; /* Reduced space between spans */
+  display: block;
+  margin-bottom: 10px;
 }
 
 .flex-form{

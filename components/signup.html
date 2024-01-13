@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Sign Up - MTasks</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo" onclick="location.href='../index.html'">MTasks</div>
+</div>
+
+<div class="content">
+    <h2 class="form-heading">Sign Up</h2>
+    <form action="../php/signup.php" method="POST" class="auth-form flex-form">
+        <input style="width: 300px; height: 50px; margin-bottom: 20px; padding: 5px;" type="email" id="email" name="email" placeholder="Enter Email" autocomplete="off" required>
+
+        <input style="width: 300px; height: 50px; margin-bottom: 20px; padding: 5px;" type="text" id="username" name="username" placeholder="Choose a Username" autocomplete="off" required>
+
+        <input style="width: 300px; height: 50px; margin-bottom: 20px; padding: 5px;" type="password" id="password" name="password" placeholder="Create a Password" autocomplete="off" required>
+
+        <input style="width: 300px; height: 50px; margin-bottom: 20px; padding: 5px;" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" autocomplete="off" required>
+
+        <label for="dob" style="color: #fff; margin-bottom: 10px;">Date of Birth:</label>
+        <input style="width: 300px; height: 50px; margin-bottom: 30px; padding: 5px;" type="date" id="dob" name="dob" required>
+
+        <button style="width: 300px; height: 50px; margin-bottom: 30px;" type="submit" class="auth-button">Sign Up</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Check if the username cookie is set
+    var username = getCookie('username');
+
+    if (username) {
+        // Redirect to home.php
+        window.location.href = './home.php';
+    }
+    });
+
+    // Function to get the value of a cookie by name
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        if (match) {
+            return match[2];
+        }
+        return null;
+    }
+</script>
+</body>
+</html>

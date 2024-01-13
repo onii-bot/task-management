@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Login - MTasks</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo" onclick="location.href='../index.html'">MTasks</div>
+</div>
+
+<div class="content">
+    <h2 class="form-heading">Login</h2>
+    <form action="../php/login.php" method="POST" class="auth-form flex-form">
+        <input style="width: 300px; height: 50px; margin-bottom: 30px; padding: 5px;" type="text" id="username" name="username" placeholder="Enter Username" autocomplete="off" required>
+        <input style="width: 300px; height: 50px; margin-bottom: 30px; padding: 5px;" type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required>
+
+        <button style="width: 300px; height: 50px; margin-bottom: 30px;" type="submit" class="auth-button">Login</button>
+    </form>
+
+    <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Check if the username cookie is set
+    var username = getCookie('username');
+
+    if (username) {
+        // Redirect to home.php
+        window.location.href = './home.php';
+    }
+    });
+
+    // Function to get the value of a cookie by name
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        if (match) {
+            return match[2];
+        }
+        return null;
+    }
+</script>
+</body>
+</html>

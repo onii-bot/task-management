@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>MTasks - Task Management System</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">MTasks</div>
+    <div class="auth-buttons">
+        <button class="auth-button" onclick="location.href='./components/login.html'">Login</button>
+        <button class="auth-button" onclick="location.href='./components/signup.html'">Sign Up</button>
+    </div>
+</div>
+
+<h2 class="focus-heading">
+    <span>Find your focus, Fuel</span>
+    <span>Your Productivity</span>
+</h2>
+
+<div class="content">
+    <p class="organization-text">
+        Stay organized and manage your tasks effortlessly with PurpleTasks.
+        Keep track of your to-do list, set due dates, and achieve your goals.
+    </p>
+    <div class="navbtns">
+        <div class="auth-buttons">
+            <button class="auth-button">Learn More</button>
+            <button class="auth-button">Get Started</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Checking for cookiee
+    var username = getCookie('username');
+
+    if (username) {
+        window.location.href = './components/home.php';
+    }
+    });
+
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        if (match) {
+            return match[2];
+        }
+        return null;
+    }
+</script>
+</body>
+</html>
